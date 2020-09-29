@@ -1,0 +1,68 @@
+<div class="container-fluid ">
+    <h3 WIDTH="20" HEIGHT="20" class="text-center" style="margin: 20px">
+        <b> ROUND-ROBIN </b>
+    </h3>
+</div>
+<!-- esta es la tabla que se cargará-->
+<div class="container">
+    <div class="container">
+        <table id="listap" class="table table-bordered table-dark table-striped" WIDTH="50%">
+        </table>
+    </div>
+    <div class="container  ">
+        <form class="text-center">
+            <div class="row text-center">
+                <div class="">
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="container text-center  ">
+        <h3 WIDTH="10" HEIGHT="10" class="text-center" style="margin: 20px">
+            <b> Designar Quantum </b>
+        </h3>
+    </div>
+    <div class="col-md-9 mb-9 text-center container text-center">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <input size="40" id="valorQ" type="number" class="form-control" name="numeroprocesos" placeholder="numero" min="1" value="3" required style="margin: 5px">
+                <a href="#simula"> <input id="btinicio" type="submit" value="Iniciar Simulacion" class="btn btn-primary btn-lg active" onclick="recibirQuantum(); roundRobin();" style="margin: 5px"> </input>
+                </a>
+                <a href="#"> <input type="submit" value="Reiniciar simulacion" class="btn btn-primary btn-lg active" onclick="history.go(0)" style="margin: 5px"> </input>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="simula">
+        <div id="contenedor container text-center" class="text-center">
+            <hr>
+            <h3>Proceso en ejecucion</h3>
+
+            <div id="reloj"></div>
+
+            <div id="contenedor_ejecucion">
+
+                <div id="proceso"></div>
+
+            </div>
+            <div id="secciones">
+
+                <h3>Listos</h3>
+                <h3>Terminados</h3>
+                <div class="columna" id="listos"></div>
+
+                <div class="columna" id="terminados"></div>
+            </div>
+            <hr>
+        </div>
+    </div>
+    <div class="container text-center">
+        <h3>Diagrama de Simulacion</h3>
+        <canvas id="gant" width="1100" height="200"></canvas>
+    </div>
+    <div class="container">
+        <h3 class="text-center">Archivos creados</h3>
+        <div id="crear-archivos" class="row">
+            <!--este es el div de dibujar los arhivos-->
+        </div>
+    </div>

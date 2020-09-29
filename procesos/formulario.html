@@ -1,0 +1,24 @@
+<div>
+    <form method="POST" action="index.php">
+        <div class="container">
+            <hr>
+            <div class="row justify-content-md-center">
+                <div class="col-md-3 mb-3 text-center">
+                    <select name="filtro" class="custom-select my-1 mr-sm-2" id="time">
+                    <option selected>Mostrar por</option>
+                    <option value="1" type="submit">Mayor Uso CPU</option>
+                    <option value="2" type="submit">Mayor Uso Memoria</option>
+                </select>
+                </div>
+                <div class="col-md-3 mb-3 text-center">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <input type="number" class="form-control" name="numeroprocesos" min="1" placeholder="procesos" value="5" required>
+                        </div>
+                    </div>
+                </div>
+                <button onchange="this.form.submit()" class="btn btn-primary mb-5" style="margin: 5px">Enviar</button>
+            </div>
+        </div>
+    </form>
+</div>
